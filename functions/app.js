@@ -16,7 +16,7 @@ date =
   (today.getDate() < 10 ? "0" + today.getDate() : today.getDate()) +
   "T" 
 
-var key="ba837437c15539752557a401791572a0493f7ee9"
+var key=process.env.NODE_APP_CLIST
 
 const link1="https://clist.by/api/v2/contest/?username=vasuKsh&api_key="+key+"&limit=150&end__gt="+date+"00:00:00&order_by=start"
 const link2="https://clist.by/api/v2/resource/?username=vasuKsh&api_key=" +key ;
