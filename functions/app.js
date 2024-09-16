@@ -19,7 +19,7 @@ date =
 var key=process.env.NODE_APP_CLIST
 
 const link1="https://clist.by/api/v2/contest/?username=vasuKsh&api_key="+key+"&limit=150&end__gt="+date+"00:00:00&order_by=start"
-const link2="https://clist.by/api/v2/resource/?username=vasuKsh&api_key=" +key ;
+const link2="https://clist.by/api/v2/resource/?username=vasuKsh&api_key=" +key+"&limit=500 ;
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
